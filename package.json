@@ -1,0 +1,31 @@
+{
+  "name": "cypress-cucumber-webpack-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/node": "^10.12.11"
+  },
+  "scripts": {
+    "test:tag": "cypress-tags run -e TAGS='@wip'",
+    "test": "cypress run --spec \"**/*.feature\"",
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.0.2",
+    "@shelex/cypress-allure-plugin": "^2.2.1",
+    "allure-commandline": "^2.13.8",
+    "allure-js-commons": "^2.0.0-beta.9",
+    "cypress": "^5.6.0",
+    "cypress-cucumber-preprocessor": "4.0.1",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.1",
+    "webpack": "^4.28.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "any-",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

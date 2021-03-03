@@ -1,0 +1,10 @@
+{
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": "*.ts",
+  "video": false,
+  "env": {
+    "issuePrefix": "https://jira.drooms.com/browse/",
+    "allure": true,
+    "allureResultsPath": "allure-results"
+  }
+}
